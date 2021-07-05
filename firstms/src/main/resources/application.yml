@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: firstms
+
+#Server Port
+server:
+  port: 9090

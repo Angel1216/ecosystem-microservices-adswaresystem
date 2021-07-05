@@ -1,0 +1,21 @@
+server:
+  port: 8087
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/clever_hotelier?serverTimezone=UTC
+    password: root
+    serverTimezone: UTC
+    useLegacyDatetimeCode: false
+    useJDBCCompliantTimezoneShift: true
+    useSSl: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true

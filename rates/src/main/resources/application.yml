@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mySQLEcosystem:3306/clever_hotelier
+    username: root
+    password: root
+    useSSl: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+security:
+  basic:
+    enabled: false
+    
+constants:
+  package: adsware.webapp
+api:
+  basepath: /product
+  product: /find/by/id
